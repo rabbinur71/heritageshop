@@ -1,0 +1,15 @@
+{
+  "name": "heritageshop",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev:frontend": "pnpm --filter frontend dev",
+    "dev:auth": "pnpm --filter auth-service start:dev",
+    "dev:catalog": "pnpm --filter catalog-service start:dev",
+    "dev:order": "pnpm --filter order-service start:dev",
+    "dev:preorder": "pnpm --filter preorder-service start:dev",
+    "dev": "echo \"Use: pnpm dev:frontend / dev:auth / dev:catalog / dev:order / dev:preorder\"",
+    "build": "pnpm -r build",
+    "test": "pnpm -r test"
+  }
+}
